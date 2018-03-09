@@ -4,6 +4,8 @@ import React from 'react';
 import Header from './header';
 import Welcome from './welcome';
 import Menu from './menu';
+import Between from './between';
+import Contact from './contact';
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Header />
       <Welcome />
       <Menu />
+      <Between />
+      <Contact />
     </div>
   )
 }
