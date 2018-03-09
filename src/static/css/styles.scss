@@ -29,10 +29,14 @@ ul {
     .nav {
       display: flex;
       p {
-        color: white;
+        color: red;
         font-family: waltograph-bold;
         font-size: 2em;
         padding: 0 10px;
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -81,6 +85,7 @@ ul {
     h1 {
       color: red;
       font-family: waltograph-bold;
+      padding-bottom: 20px;
       text-align: center;
     }
     ul {
@@ -134,5 +139,65 @@ ul {
   padding: 80px 0;
   h1 {
     padding-bottom: 20px;
+  }
+}
+
+// ################# BETWEEN #################
+.between-container {
+  padding: 80px 0;
+}
+
+.between-top {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+    max-width: 400px;
+  }
+}
+
+.between-bottom {
+  display: flex;
+  div {
+    margin: 0 5px;
+    max-width: 25%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// ################# CONTACT #################
+.contact {
+  background-color: black;
+  padding: 80px 0;
+  h1 {
+    color: red;
+    font-family: waltograph-bold;
+    text-align: center;
+  }
+}
+
+.contact-container {
+  display: flex;
+  padding-top: 40px;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    h5, p {
+      text-align: center;
+    }
+    .contact-location {
+      padding-top: 20px;
+    }
+  }
+  .contact-info {
+    flex-basis: 50%;
+    h5, p {
+      color: white;
+    }
+  }
+  .contact-location {
+    flex-basis: 50%;
   }
 }

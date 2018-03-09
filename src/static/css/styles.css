@@ -22,10 +22,13 @@ ul {
     .header .navbar .nav {
       display: flex; }
       .header .navbar .nav p {
-        color: white;
+        color: red;
         font-family: waltograph-bold;
         font-size: 2em;
         padding: 0 10px; }
+        .header .navbar .nav p:hover {
+          color: white;
+          cursor: pointer; }
   .header .logo {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -60,6 +63,7 @@ ul {
   .menu .menu-container h1 {
     color: red;
     font-family: waltograph-bold;
+    padding-bottom: 20px;
     text-align: center; }
   .menu .menu-container ul {
     display: flex;
@@ -98,5 +102,48 @@ ul {
   padding: 80px 0; }
   .menu-items-container h1 {
     padding-bottom: 20px; }
+
+.between-container {
+  padding: 80px 0; }
+
+.between-top img {
+  display: block;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 400px; }
+
+.between-bottom {
+  display: flex; }
+  .between-bottom div {
+    margin: 0 5px;
+    max-width: 25%; }
+    .between-bottom div img {
+      height: 100%;
+      width: 100%; }
+
+.contact {
+  background-color: black;
+  padding: 80px 0; }
+  .contact h1 {
+    color: red;
+    font-family: waltograph-bold;
+    text-align: center; }
+
+.contact-container {
+  display: flex;
+  padding-top: 40px; }
+  @media only screen and (max-width: 800px) {
+    .contact-container {
+      flex-direction: column; }
+      .contact-container h5, .contact-container p {
+        text-align: center; }
+      .contact-container .contact-location {
+        padding-top: 20px; } }
+  .contact-container .contact-info {
+    flex-basis: 50%; }
+    .contact-container .contact-info h5, .contact-container .contact-info p {
+      color: white; }
+  .contact-container .contact-location {
+    flex-basis: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
