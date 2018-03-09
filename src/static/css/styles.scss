@@ -76,21 +76,31 @@ ul {
 
 // ################# MENU #################
 .menu {
-  background-color: black;
   .menu-container {
     padding-top: 80px;
     h1 {
-      color: white;
+      color: red;
       font-family: waltograph-bold;
       text-align: center;
     }
     ul {
       display: flex;
       justify-content: space-evenly;
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        li {
+          text-align: center;
+        }
+      }
       li {
         color: white;
         font-family: waltograph-bold;
         list-style: none;
+        text-shadow: 0px 0px 3px black;
+        &:hover {
+          color: red;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -99,11 +109,17 @@ ul {
 .menu-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media only screen and (max-width: 800px) {
+    .menu-item-price {
+      text-align: center;
+    }
+  }
   .menu-item-item {
     text-align: center;
   }
   p {
     color: white;
+    text-shadow: 0px 0px 3px black;
   }
 }
 
@@ -116,4 +132,7 @@ ul {
 
 .menu-items-container {
   padding: 80px 0;
+  h1 {
+    padding-bottom: 20px;
+  }
 }

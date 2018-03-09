@@ -55,29 +55,40 @@ ul {
   .welcome-container .welcome-img {
     flex-basis: 50%; }
 
-.menu {
-  background-color: black; }
-  .menu .menu-container {
-    padding-top: 80px; }
-    .menu .menu-container h1 {
+.menu .menu-container {
+  padding-top: 80px; }
+  .menu .menu-container h1 {
+    color: red;
+    font-family: waltograph-bold;
+    text-align: center; }
+  .menu .menu-container ul {
+    display: flex;
+    justify-content: space-evenly; }
+    @media only screen and (max-width: 800px) {
+      .menu .menu-container ul {
+        flex-direction: column; }
+        .menu .menu-container ul li {
+          text-align: center; } }
+    .menu .menu-container ul li {
       color: white;
       font-family: waltograph-bold;
-      text-align: center; }
-    .menu .menu-container ul {
-      display: flex;
-      justify-content: space-evenly; }
-      .menu .menu-container ul li {
-        color: white;
-        font-family: waltograph-bold;
-        list-style: none; }
+      list-style: none;
+      text-shadow: 0px 0px 3px black; }
+      .menu .menu-container ul li:hover {
+        color: red;
+        cursor: pointer; }
 
 .menu-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+  @media only screen and (max-width: 800px) {
+    .menu-items .menu-item-price {
+      text-align: center; } }
   .menu-items .menu-item-item {
     text-align: center; }
   .menu-items p {
-    color: white; }
+    color: white;
+    text-shadow: 0px 0px 3px black; }
 
 .menu-description p {
   color: white;
@@ -85,5 +96,7 @@ ul {
 
 .menu-items-container {
   padding: 80px 0; }
+  .menu-items-container h1 {
+    padding-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
