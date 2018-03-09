@@ -43,10 +43,10 @@ const Appetizer = () => {
   const appetizer_list = appetizer.map((item, index) => {
     return (
       <div key={item+index}>
-        <div className="menu-items">
+        <div className="menu-items animated bounceIn">
           <p className="menu-item-item">{item.item}</p>
           <p>{item.name}</p>
-          <p>{item.price}</p>
+          <p className="menu-item-price">{item.price}</p>
         </div>
         <div className="menu-description">
           <p>{item.description.length > 0 && item.description}</p>
