@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: waltograph;
+    src: url('../fonts/waltograph.regular.ttf');
+}
+
+@font-face {
+    font-family: waltograph-bold;
+    src: url('../fonts/waltograph.bold.ttf');
+}
+
+// ################# HEADER #################
+.header {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    .nav {
+      display: flex;
+      p {
+        color: white;
+        font-family: waltograph-bold;
+        font-size: 2em;
+        padding: 0 10px;
+      }
+    }
+  }
+  .logo {
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 50px;
+      @media only screen and (max-width: 800px) {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+// ################# WELCOME #################
+.welcome-container {
+  display: flex;
+  padding: 80px 0;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    h1, p {
+      text-align: center;
+    }
+  }
+  h1 {
+    font-family: waltograph-bold;
+  }
+  .welcome-text {
+    flex-basis: 50%;
+    padding: 0 10px;
+  }
+  .welcome-img {
+    flex-basis: 50%;
+  }
+}
+
+// ################# MENU #################
+.menu {
+  background-color: black;
+  .menu-container {
+    padding-top: 80px;
+    h1 {
+      color: white;
+      font-family: waltograph-bold;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        color: white;
+        font-family: waltograph-bold;
+        list-style: none;
+      }
+    }
+  }
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .menu-item-item {
+    text-align: center;
+  }
+  p {
+    color: white;
+  }
+}
+
+.menu-description {
+  p {
+    color: white;
+    text-align: center;
+  }
+}
+
+.menu-items-container {
+  padding: 80px 0;
+}
