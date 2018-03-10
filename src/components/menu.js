@@ -49,6 +49,7 @@ class Menu extends Component {
     return (
       <div className="menu"
         style={{backgroundImage: "url(" + backgroundImg + ")",
+                backgroundAttachment: "fixed",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
