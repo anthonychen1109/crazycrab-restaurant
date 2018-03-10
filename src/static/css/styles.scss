@@ -94,6 +94,7 @@ ul {
       @media only screen and (max-width: 800px) {
         flex-direction: column;
         li {
+          line-height: 40px;
           text-align: center;
         }
       }
@@ -158,9 +159,18 @@ ul {
 
 .between-bottom {
   display: flex;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
   div {
     margin: 0 5px;
     max-width: 25%;
+    @media only screen and (max-width: 800px) {
+      max-width: 100%;
+    }
     img {
       height: 100%;
       width: 100%;

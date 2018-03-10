@@ -72,6 +72,7 @@ ul {
       .menu .menu-container ul {
         flex-direction: column; }
         .menu .menu-container ul li {
+          line-height: 40px;
           text-align: center; } }
     .menu .menu-container ul li {
       color: white;
@@ -114,9 +115,17 @@ ul {
 
 .between-bottom {
   display: flex; }
+  @media only screen and (max-width: 800px) {
+    .between-bottom {
+      flex-direction: column; }
+      .between-bottom img {
+        width: 100%; } }
   .between-bottom div {
     margin: 0 5px;
     max-width: 25%; }
+    @media only screen and (max-width: 800px) {
+      .between-bottom div {
+        max-width: 100%; } }
     .between-bottom div img {
       height: 100%;
       width: 100%; }
