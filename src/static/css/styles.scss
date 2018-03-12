@@ -66,6 +66,10 @@ ul {
   }
 }
 
+.hamburger {
+  display: none;
+}
+
 // ################# WELCOME #################
 .welcome-container {
   display: flex;
@@ -242,5 +246,44 @@ ul {
   }
   .contact-location {
     flex-basis: 50%;
+  }
+}
+
+// ################# MEDIA #################
+@media only screen and (max-width: 800px) {
+  .nav {
+    p:not(:nth-child(5)) {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      margin-right: 5%;
+      position: fixed;
+      right: 0;
+      z-index: 999;
+    }
+  }
+
+  .responsive {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    p {
+      font-family: waltograph-bold;
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 0;
+      margin: 0 5%;
+    }
   }
 }

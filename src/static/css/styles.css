@@ -51,6 +51,9 @@ ul {
         .header .logo img {
           max-width: 400px; } }
 
+.hamburger {
+  display: none; }
+
 .welcome-container {
   display: flex;
   padding: 80px 0; }
@@ -180,5 +183,34 @@ ul {
       color: white; }
   .contact-container .contact-location {
     flex-basis: 50%; }
+
+@media only screen and (max-width: 800px) {
+  .nav p:not(:nth-child(5)) {
+    display: none; }
+  .nav .hamburger {
+    display: block;
+    margin-right: 5%;
+    position: fixed;
+    right: 0;
+    z-index: 999; }
+
+  .responsive {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; }
+    .responsive p {
+      font-family: waltograph-bold;
+      padding: 10px; }
+      .responsive p:hover {
+        cursor: pointer; }
+    .responsive .hamburger {
+      display: block;
+      position: absolute;
+      right: 0;
+      margin: 0 5%; } }
 
 /*# sourceMappingURL=styles.css.map */
