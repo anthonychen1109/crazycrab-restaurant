@@ -18,6 +18,16 @@ ul {
     src: url('../fonts/waltograph.bold.ttf');
 }
 
+.toTop {
+  border: 1px solid black;
+  bottom: 0;
+  display: none;
+  margin: 5%;
+  position: fixed;
+  right: 0;
+  z-index: 99;
+}
+
 // ################# HEADER #################
 .header {
   background-color: black;
