@@ -17,10 +17,10 @@ const Between = () => {
           <img src={Logo} alt="logo"/>
         </div>
         <div className="between-bottom">
-          <div><img src={Img1}/></div>
-          <div><img src={Img2}/></div>
-          <div><img src={Img3}/></div>
-          <div><img src={Img4}/></div>
+          <div><img src={Img1} alt="img1" /></div>
+          <div><img src={Img2} alt="img2" /></div>
+          <div><img src={Img3} alt="img3" /></div>
+          <div><img src={Img4} alt="img4" /></div>
         </div>
       </div>
     </div>
