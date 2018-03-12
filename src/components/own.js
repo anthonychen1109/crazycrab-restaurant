@@ -3,62 +3,62 @@ import React from 'react';
 const own = [
   {
     item: 'C1.',
-    name: 'Blue Crab (Seasonal) 6.5 LB',
-    price: 'M/P',
+    name: 'Blue Crab (Seasonal)',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C2.',
-    name: 'Shrimp (No Head) 8.5 LB',
-    price: 'M/P',
+    name: 'Shrimp (No Head)',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C3.',
-    name: 'Snow Crab Legs 8.5 LB',
-    price: 'M/P',
+    name: 'Snow Crab Legs',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C4.',
-    name: 'Crawfish 7.5 LB',
-    price: 'M/P',
+    name: 'Crawfish',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C5.',
-    name: 'Shrimp (Head On) 7.5 LB',
-    price: 'M/P',
+    name: 'Shrimp (Head On)',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C6.',
-    name: 'Clams 6.5 LB',
-    price: 'M/P',
+    name: 'Clams',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C7.',
-    name: 'Manila Clams 4.5 LB',
-    price: 'M/P',
+    name: 'Manila Clams',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C8.',
-    name: 'Green Mussel 6.5 LB',
-    price: 'M/P',
+    name: 'Green Mussel',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C9.',
-    name: 'Black Mussel 6.5 LB',
-    price: 'M/P',
+    name: 'Black Mussel',
+    price: '1/2 LB (M/P)',
     description: ''
   },
   {
     item: 'C10.',
-    name: 'Sausage 4.5 LB',
-    price: 'M/P',
+    name: 'Sausage',
+    price: '1/2 LB $4.00',
     description: ''
   },
 ]
@@ -82,6 +82,17 @@ const Own = () => {
     <div className="menu-items-container container">
       <h1>Make Your Own Seafood Combo</h1>
       {own_list}
+      <br />
+      <h5>What Seasoning Would You Like?</h5>
+      <p>Cajun, Garlic Butter, Lemon Pepper, Crazy Special (All of the above)</p>
+      <br />
+      <h5>Spicy Level</h5>
+      <ul className="spicy-level">
+        <p>Mild</p>
+        <p>Medium</p>
+        <p>Hot</p>
+        <p>Extra Spicy</p>
+      </ul>
     </div>
   )
 }

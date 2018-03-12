@@ -3,14 +3,14 @@ import React from 'react';
 const side = [
   {
     item: 'S1.',
-    name: 'Corn On The Cob (3)',
-    price: '$2.50',
+    name: 'Corn',
+    price: '$0.75/pc',
     description: ''
   },
   {
     item: 'S2.',
-    name: 'Potato (3)',
-    price: '$2.00',
+    name: 'Potato',
+    price: '$0.75/pc',
     description: ''
   },
   {
@@ -45,8 +45,8 @@ const side = [
   },
   {
     item: 'S8.',
-    name: 'Sausage (1 LB)',
-    price: '$8.00',
+    name: 'Sausage (4.5 LB)',
+    price: '$8.00/LB',
     description: ''
   },
   {
@@ -54,6 +54,18 @@ const side = [
     name: 'Extra Condiments',
     price: '$0.50',
     description: '(Garlic Butter, BBQ, Buffalo)'
+  },
+  {
+    item: 'S10.',
+    name: 'Clam Chowder',
+    price: '$5.50',
+    description: ''
+  },
+  {
+    item: 'S11.',
+    name: 'House Seafood Soup',
+    price: '$5.50',
+    description: ''
   },
 ]
 
@@ -74,8 +86,9 @@ const Side = () => {
   })
   return (
     <div className="menu-items-container container">
-      <h1>Sides</h1>
+      <h1>Sides/Soup</h1>
       {side_list}
+      <p>* Raw or undercooked foods may cause illness!</p>
     </div>
   )
 }

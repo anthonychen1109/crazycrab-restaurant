@@ -6,8 +6,9 @@ import Appetizer from './appetizer';
 import Fried from './fried';
 import Side from './side';
 import Dirty from './dirty';
-import Seasonal from './seasonal';
 import Own from './own';
+import Lunch from './lunch';
+import Drink from './drink';
 
 // Images
 const backgroundImg = images.menu;
@@ -36,10 +37,12 @@ class Menu extends Component {
         return <Side />
       case 'dirty':
         return <Dirty />
-      case 'seasonal':
-        return <Seasonal />
       case 'own':
         return <Own />
+      case 'lunch':
+        return <Lunch />
+      case 'drink':
+        return <Drink />
       default:
         return <Appetizer />;
     }
@@ -61,10 +64,11 @@ class Menu extends Component {
           <div className="menu-nav">
             <ul>
               <li onClick={() => this.setItem('appetizer')}>Appetizer</li>
-              <li onClick={() => this.setItem('fried')}>Something Fried</li>
               <li onClick={() => this.setItem('side')}>Sides</li>
+              <li onClick={() => this.setItem('lunch')}>Lunch Specials</li>
+              <li onClick={() => this.setItem('fried')}>Something Fried</li>
+              <li onClick={() => this.setItem('drink')}>Drinks</li>
               <li onClick={() => this.setItem('dirty')}>Get Your Hands Dirty</li>
-              <li onClick={() => this.setItem('seasonal')}>Seasonal Food</li>
               <li onClick={() => this.setItem('own')}>Make Your Own Seafood Combo</li>
             </ul>
           </div>
@@ -72,6 +76,8 @@ class Menu extends Component {
             <div>
               {this.renderItem(this.state.selectedItem)}
             </div>
+            <h5>Warning - This facility offers raw oysters, eating these oyster may cause severe illness and even death in persons.</h5>
+            <p>Who have liver disease, cancer, or other chronic illness that weaken the immune system. If you eat oysters and become ill, you should seek medical attention immediately. If unsure of your risk, please consult your physician.</p>
           </div>
         </div>
       </div>
