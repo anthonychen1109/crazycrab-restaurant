@@ -50,7 +50,7 @@ class Menu extends Component {
 
   render() {
     return (
-      <div className="menu"
+      <div id="menu" className="menu"
         style={{backgroundImage: "url(" + backgroundImg + ")",
                 backgroundAttachment: "fixed",
                 backgroundPosition: "center",

@@ -7,7 +7,7 @@ const welcome = images.welcome;
 
 const Welcome = () => {
   return (
-    <div className="welcome">
+    <div id="about" className="welcome">
       <div className="welcome-container container">
         <div className="welcome-text">
           <h1>Welcome!</h1>
